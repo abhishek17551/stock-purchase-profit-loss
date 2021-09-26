@@ -1,9 +1,44 @@
 body {
     text-align: center;
-    
+    background-image: url('stock-img.jpg');
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover;
+    margin-top: 20%;
+    margin-bottom: 30%;
+    font-family: "Trirong", serif;
+}
+
+h1 {
+    color: #DBEAFE ;
+    font-size: 40px;
 }
 
 label {
     display: block;
     padding-bottom: 1rem;
+}
+
+#initial-price, #stocks-quantity, #current-price {
+    height: 55px;
+    width: 275px;
+    font-size: larger;
+}
+
+#submit-btn {
+    margin-top: 2%;
+    height: 40px;
+    width: 85px;
+    cursor: pointer;
+    border-radius: .4rem;
+}
+
+#output-box {
+    margin-top: 3%;
+    text-align: center;
+    color: wheat;
+    font-size: larger;
+    font-weight: bold;
+
+    
 }
