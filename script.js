@@ -7,7 +7,12 @@ const outputBox = document.querySelector("#output-box");
 
 
 function calculateProfitAndLoss(initial,quantity,current){
-    if(initial > current){
+    if (initial <= 0 || current<=0){
+        showOutput("Please enter positive values");
+        return lossPercentage;
+        
+    }
+    else if(initial > current){
         //logic for loss
         var loss = (initial-current) * quantity;
         var lossPercentage = (loss/initial) * 100;
